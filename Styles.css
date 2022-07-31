@@ -1,14 +1,18 @@
 header { 
     background-color: rgba(6, 189, 128, 0.699);
     display: flex;
+    min-height: fit-content;
+
 }
 img {
     margin: 5px;
     align-self: flex-start;
 }
-button {
+a {
     align-self: flex-end;
+    
 }
+
 section {
     display: grid;
     grid-template-areas:
@@ -59,5 +63,10 @@ section {
     margin-top: 5px;
     background-color: rgba(6, 189, 128, 0.699);
     text-align: end;
-    font-size: small;
 }
+button {
+    height: min-content;
+    margin: 5px;
+    padding: 5px;
+}
+
