@@ -7,6 +7,7 @@ header {
 img {
     margin: 5px;
     align-self: flex-start;
+    box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
 }
 a {
     align-self: flex-end;
@@ -34,14 +35,14 @@ section {
     grid-area: left1; 
     border-style: groove;
     padding: 20%;
-    margin: 10px;
+    margin: 10% 2% 2% 10%;
     
 }
 #article2 {
     grid-area: right1;
     border-style: groove;
     padding: 20%;
-    margin: 10px;
+    margin: 10% 10% 2% 2%;
     
 }
 
@@ -49,24 +50,24 @@ section {
     grid-area: left2;
     border-style: groove;
     padding: 20%;
-    margin: 10px;
+    margin: 2% 2% 10% 10%;
 }
 #article4 {
     grid-area: right2;
     border-style: groove;
     padding: 20%;
-    margin: 10px;
+    margin: 2% 10% 10% 2%;
 }
 
 .footer {
     grid-area: footer;
-    margin-top: 5px;
+    margin-top: 5%;
     background-color: rgba(6, 189, 128, 0.699);
     text-align: end;
 }
 button {
     height: min-content;
-    margin: 5px;
-    padding: 5px;
+    margin: 5%;
+    padding: 5%;
 }
 
