@@ -1,54 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" type="text/css" href="Styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alebombini-Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/fca52f3618.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  
+  <title>Portfolio AleBombini</title>
 </head>
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
-    <script src="script.js"></script>
-    <header>
+  
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+  <header>
+    <!--logos-->
+    <nav class="navbar navbar-expand-lg bg-success" id="navbar">
+      <div class="container-fluid">
+          <img src="assets/images/APLogo-20-20.png" alt="Logo arg programa" width="100" height="70" class="d-inline-block align-text-top">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+          <!-- links navBar-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.linkedin.com/in/alejandra-bombini-1b4551a4/" target="_blank"><span style="color: whitesmoke;"><i class="fa-brands fa-linkedin-in fa-2xl"></i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://github.com/alebombini" target="_blank"><span style="color: whitesmoke;"><i class="fa-brands fa-github fa-2xl"></i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"  href="https://t.me/alebombini" target="_blank"><span style="color: whitesmoke;"><i class="fa-brands fa-telegram fa-2xl"></i></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><span style="color: whitesmoke;"><i class="fa-brands fa-whatsapp fa-2xl" target="_blank"></i></span></a>
+            </li>
+         
+          <!-- Button trigger modal -->
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span style="background-color:whitesmoke;"><i class="fa-solid fa-user-lock fa-lg"></i></span>
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"> Contraseña: </label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Ingresar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="banner">
+  <h1>Alejandra Bombini</h1>
+  <h2>Full Stack Developer Jr.</h2>
+</div>
+
+<main>
+  <!-- fotolinks a secciones-->
+  <div class="d-flex flex-row mb-3" id="card">
+    <figure class="figure"><a href="#personal"><img class="img-thumbnail" src="assets\images\morita_y_yox1.jpg" alt="Foto con mi mascota"><figcaption class="figure-caption">SOBRE MI</figcaption></a></figure>
+    <figure class="figure"><a href="#academica"><img src="assets\images\libro_iloveargx1.heic" class="img-thumbnail" alt="Estudiando en la playa"><figcaption class="figure-caption">MIS ESTUDIOS</figcaption></a></figure>
+    <figure class="figure"><a href="#laboral"><img src="assets\images\milkachips.png" class="img-thumbnail" alt="foto de mi trabajo en Mondelez- Milka"><figcaption class="figure-caption">EXPERIENCIA</figcaption></a></figure>
+    <figure class="figure"><a href="#skills"><img src="assets\images\Soft-Skillsx1.png" class="img-thumbnail" alt=""><figcaption class="figure-caption">SKILLS</figcaption></a></figure>
+    <figure class="figure"><a href="#proyectos"><img src="assets\images\oficina-en-la-playax1.jpg" class="img-thumbnail" alt="Codeando con vista al mar"><figcaption class="figure-caption">PROYECTOS</figcaption></a></figure>
+  </div>
+  <!-- seccion personal-->
+  <div class="info" id="personal">
+    <article><h5 class="titulo">Sobre Mi</h5>
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        <!--<source src="movie.ogg" type="video/ogg">-->
+      </video>
+      <p> Mi nombre es Alejandra Bombini, soy de Mar del Plata y quisiera explicar en primera persona porqué pienso que mi experiencia fuera del area de IT va a serme útil en la industria del software.</p>
+      <p>Hace 18 años trabajo en Mondelez Argentina, una companía multinacional de consumo masivo, pasando por distintos cargos en al área de ventas y visibilidad, donde aprendí a negociar con clientes y distribuidores, a capacitar y "coachear" vendedores y merchandisers, y aprendí muchísimo de marketing: siento que tengo un master “de campo” en trademarketing.
+      Pero sobretodo desarrollé habilidades blandas: a trabajar en equipo, orientada a resultados, a usar mi creatividad para resolver problemas: a pensar <em> "fuera de la caja"</em>, aprendi que se atraen más moscas con miel que con vinagre. Aprendí tanto que se convirtió en mi carrera, mi universidad donde siempre encuentro nuevos desafíos y aprendizajes.</p>
+      <p><strong>Aprendí que soy una persona que necesita desafíos, y que cuando pongo mi corazón en lo que hago, disfruto mis logros y eso le da sentido a todo.</strong> </p>
       
-        <div class="row">
-          <div class="col"><img src="images\inti.jpg" alt="logo Inti" width="auto" height="30px" class=""></div>
-          <div class="col"> <img src="images\APLogo-20-20.png" alt="Logo arg programa" width="auto" height="30px" class=""></div>
-          <div class="col"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
-          <div class="col"><a href="#">Telegram</a></div>
-          <div class="col"><a href="GitHub"></a></div>
-          <div class="col"><a href="#">Instagram</a></div>
-    
-        </div>
-    
+      <p>Por eso hace un tiempo, cuando empecé el curso de Argentina Programa y me encontré con un mundo que me apasionó y en el cual quiero sambullirme cada vez mas, supe que era el momento de cambiar y que mi próximo trabajo tenia que ser en la industria del software. 
+        Entiendo que es un camino largo, que tengo mucho por aprender: tengo muchas ganas de aprender y voy a disfrutar cada paso. Estoy muy entusiasmada con este cambio en mi vida. 
+      </p>
+     
+     <p>Si quiere saber algo mas sobre mi, hablemos: <a href="https://t.me/alebombini"><i class="fa-brands fa-telegram fa-2xl"></i></a></p>
+     
+      
+    </article>
+  </div>
 
-    </header>
+<div class="info" id="academica"> <!-- seccion estudios-->
+  <article>
+    <h5 class="titulo">Formación académica</h5>
+    <ul>
+      <li>Certificación Diseño web responsivo- FreeCodeCamp. </li>
+      <li>Programador Full Stack Jr: certificado por la Camara Argentina de la Industria del Software y el Ministerio de Desarrollo Productivo.</li>
+      <li>Ingles Fluido: Laboratorio de Idiomas de la UNMDP- Cursada completa.</li>
+    </ul>
+  </article>
+</div>
+
+<div class="info" id="laboral">
+  <!-- seccion experiencia laboral-->
+   <article>
+     <H5 class="titulo">Experiencia profesional</h5>
    
+       <p><h6>2021-Actual: Representante de Visibilidad TT</h6>
+        <ul>Tareas a cargo:
+          <li>Negociacion de exhibiciones y promociones en puntos de venta estratégicos.</li>
+          <li>Coaching de merchandisers Distribuidores.</li>
+          <li>Coordinacion, implementacion y presentacion de resultados de acciones de marketing.</li>
+        </ul> </p>
+       <p><h6>2017-2021: Analista de Mercados TT, Mondelez Internacional.</h6>
+         <ul>Tareas a Cargo:
+          <li>Coaching fuerza de  ventas de preventistas de 7 distribuidores.</li>
+          <li>Gestion y desarrollo de negocios, nuevos clientes.</li>
+          <li>Auditorias de mercado: analisis de la gestion de los 7 distribuidores a cargo, detección de oporunidades, armado de informe y presentación de los resultados, gestión de planes de acción, y seguimiento.</li>
+         </ul>
+        </p>
+        <p><h6>2005-20017: Promotora de ventas, Mondelez Internacional</h6>
+         <ul>Tareas a cargo:
+           <li>Negociacion de exhibiciones en principales puntos de venta</li>
+           <li>Coaching, armado de rutas y seguimiento de merchandisers del distribuidor</li>
+         </ul>
+        </p>
+    </article>
+  </div>
+<div class="info" id="skills">
+<!-- seccion skills-->
+   <article><h5 class="titulo">Skills</h5>
+ <!-- aca tiene que ir algun tipo de grafico -->
+   <div class="contenedor-flex">
+    <ul id="lista-skills">
+      <li>Ingles oral y escrito:</li>
+      <li>Trabajo en equipo: </li>
+      <li>Negociación: </li>
+      <li>Liderazgo: </li>
+      <li>Oratoria: </li>
+      <li>Coaching: </li>
+      <li>Adaptación al cambio:</li>
+    </ul> 
+    <div class="flex-item-barras">
+        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</spam>▋▋ </p>
+        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋▋▋ </spam></p>
+        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</spam>▋▋</p>
+        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋</spam>▋▋▋▋ </p>
+        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</spam>▋▋ </p>
+        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</spam>▋▋</p>
+        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋▋▋ </spam> </p>
+    </div>
+  </div>
+  
+  </div>
 
-    <section>
-      <article class="header" id="titulo">
-        <h1> @alebombini - Portfolio</h1>
-      </article>
-      <article class="left1" id="article1">
-        <p>article 1</p>
+    </article>
+  </div>
+<div class="info" id="proyectos">
+  <!--seccion proyectos-->
+   <article><h5 class="titulo">Proyectos</h5>
+      <div class="d-flex flex-row mb-3" id="card">
+       <figure><img src="assets\images\proyectoFreeCodeCampTributo.PNG" class="img-thumbnail" alt="pagina tributo proyecto FreeCodeCamp"><figcaption class="figure-caption">Pagina tributo</figcaption></figure> 
+       <figure><img src="assets\images\formulario.PNG" class="img-thumbnail" alt="formulario proyecto FreeCodeCamp"><figcaption class="figure-caption">Formulario</figcaption></figure>
+       <figure><img src="assets\images\tecnica.png" class="img-thumbnail" alt="proyecto FreeCodeCamp"><figcaption class="figure-caption">Doc. Tecnica</figcaption></figure>
+       <figure><img src="assets\images\landingpagex1.png" class="img-thumbnail" alt="proyecto Landing Page"><figcaption class="figure-caption">Landing Page</figcaption></figure>
+      </div>
+   </article>
+  </div>
+<div class="footer" id="footer">
+  <a href="#navbar" class="subir">&#8593;</a>
+</div>
 
-      </article>
-      <article class="right1" id="article2">
-       <p> article 2</p> 
-      </article>
-      <article class="left2" id="article3">
-        <p>article 3</p>
-      </article>
-      <article class="right2" id="article4">
-        <p>article 4</p>
-      </article>
-    
-    </section>
-  <footer class="footer">
-    <button type="button" class="btn btn-dark">Log</button>
-  </footer> 
-   
+</main>
+
 </body>
 </html>
