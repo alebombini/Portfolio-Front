@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/fca52f3618.js" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" type="text/css" href="./styles.css">
   
   <title>Portfolio AleBombini</title>
@@ -77,8 +77,9 @@
   </nav>
 </header>
 <div class="banner">
-  <h1>Alejandra Bombini</h1>
-  <h2>Full Stack Developer Jr.</h2>
+  <h1 id="nombre">Alejandra Bombini</h1>
+  <div id="titulo"> <h2>Full Stack Developer Jr.</h2> <div class="lapiz" id="lapizTitulo"><i class="fa-solid fa-pen-to-square"></i></div></div>
+  
 </div>
 
 <main>
@@ -108,8 +109,10 @@
      
      <p>Si quiere saber algo mas sobre mi, hablemos: <a href="https://t.me/alebombini"><i class="fa-brands fa-telegram fa-2xl"></i></a></p>
      
-      
+     <div class="lapiz" id="lapizSobreMi"><i class="fa-solid fa-pen-to-square"></i></div>
     </article>
+    
+  </div>
   </div>
 
 <div class="info" id="academica"> <!-- seccion estudios-->
@@ -120,6 +123,7 @@
       <li>Programador Full Stack Jr: certificado por la Camara Argentina de la Industria del Software y el Ministerio de Desarrollo Productivo.</li>
       <li>Ingles Fluido: Laboratorio de Idiomas de la UNMDP- Cursada completa.</li>
     </ul>
+    <div class="lapiz" id="lapizAcademica"><i class="fa-solid fa-pen-to-square"></i></div>
   </article>
 </div>
 
@@ -147,6 +151,7 @@
            <li>Coaching, armado de rutas y seguimiento de merchandisers del distribuidor</li>
          </ul>
         </p>
+        <div class="lapiz" id="lapizExperiencia"><i class="fa-solid fa-pen-to-square"></i></div>
     </article>
   </div>
 <div class="info" id="skills">
@@ -164,18 +169,18 @@
       <li>Adaptación al cambio:</li>
     </ul> 
     <div class="flex-item-barras">
-        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</spam>▋▋ </p>
-        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋▋▋ </spam></p>
-        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</spam>▋▋</p>
-        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋</spam>▋▋▋▋ </p>
-        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</spam>▋▋ </p>
-        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</spam>▋▋</p>
-        <p><spam style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋▋▋ </spam> </p>
+        <p><span style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</span>▋▋ </p>
+        <p><span style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋▋▋ </span></p>
+        <p><span style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</span>▋▋</p>
+        <p><span style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋</spam>▋▋▋▋ </p>
+        <p><span style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</span>▋▋ </p>
+        <p><span style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋</span>▋▋</p>
+        <p><span style="color:rgba(102, 111, 213, 0.772)">▋▋▋▋▋▋▋▋▋▋ </span> </p>
     </div>
   </div>
-  
+  <div class="lapiz" id="lapizSkills"><i class="fa-solid fa-pen-to-square"></i></div>
   </div>
-
+  
     </article>
   </div>
 <div class="info" id="proyectos">
@@ -186,6 +191,7 @@
        <figure><img src="assets\images\formulario.PNG" class="img-thumbnail" alt="formulario proyecto FreeCodeCamp"><figcaption class="figure-caption">Formulario</figcaption></figure>
        <figure><img src="assets\images\tecnica.png" class="img-thumbnail" alt="proyecto FreeCodeCamp"><figcaption class="figure-caption">Doc. Tecnica</figcaption></figure>
        <figure><img src="assets\images\landingpagex1.png" class="img-thumbnail" alt="proyecto Landing Page"><figcaption class="figure-caption">Landing Page</figcaption></figure>
+       <div class="lapiz" id="lapizProyectos"><i class="fa-solid fa-pen-to-square"></i></div>
       </div>
    </article>
   </div>
@@ -195,5 +201,8 @@
 
 </main>
 
+<script src="scripts\codigo.js"> </script>
+<script src="scripts\objetos.js"> </script>
+<script src="https://kit.fontawesome.com/fca52f3618.js" crossorigin="anonymous"></script>
 </body>
 </html>

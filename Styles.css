@@ -18,6 +18,9 @@ a.nav-link.active:hover {
   background-color: rgba(95, 110, 157, 0.993);
   
 }
+.lapiz {
+  display: none;
+}
 
 main {
   position: relative;
@@ -55,11 +58,12 @@ background-color: black;
 padding: 10px;
 }
 
-h2 {
+#titulo {
 padding: 10px;
 background-color:rgba(17, 16, 16, 0.1);
 font-family: Impact, serif;
 }  
+
 h5 {
 margin-top: 4%;
 color: rgb(255, 255, 255);
